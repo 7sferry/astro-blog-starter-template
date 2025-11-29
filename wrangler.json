@@ -1,14 +1,16 @@
 {
+  "main": "dist/_worker.js/index.js",
   "name": "ferry",
-  "compatibility_date": "2025-10-08",
-  "compatibility_flags": ["nodejs_compat"],
-  "main": "src/pages/index.astro",
+  "compatibility_date": "YYYY-MM-DD", // Update to the day you deploy
+  "compatibility_flags": [
+    "nodejs_compat",
+    "global_fetch_strictly_public"
+  ],
   "assets": {
-    "directory": "./dist",
-    "binding": "ASSETS"
+    "binding": "ASSETS",
+    "directory": "./dist"
   },
   "observability": {
     "enabled": true
-  },
-  "upload_source_maps": true
+  }
 }
